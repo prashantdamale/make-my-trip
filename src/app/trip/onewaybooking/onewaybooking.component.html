@@ -1,0 +1,113 @@
+<app-nav></app-nav>
+
+<p>onewaybooking works!</p>
+<!-- <div class="row" >
+  <form [formGroup]="flightdataa">
+    <div class="col-md-5 mb-3">
+      <label for="country" formControlName="from1" from="">From</label>
+      <select class="droupdown">
+        <option *ngFor="let item of cityname">{{item.city}}</option>
+          </select> 
+      <div class="invalid-feedback">
+        Please select a valid country.
+      </div>
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="state" formControlName="to" to="">To</label>
+      <select class="droupdown">
+        <option *ngFor="let item of cityname">{{item.city}}</option>
+          </select> 
+      <div class="invalid-feedback">
+        Please provide a valid state.
+      </div>
+    </div>
+  </form>
+    <div class="text-center at-3">
+      <button class="btn btn-primary" (click)="searchflight()">search</button>
+    </div>
+  </div> -->
+  
+  <span class="a" [formGroup]="abc" >
+    <span class="dsd">
+      <p><b>From</b></p>
+      <select searchable="SearchfromCity" formControlName="city1">
+        <option value="" disabled selected><b> Choose your City</b></option>
+        <option *ngFor="let item of cityname" >
+          {{item.city}}
+        </option>
+      </select> 
+    </span>
+  
+  
+    <!-- --------------Select City second----------------------------------- -->
+    <span class="dsd">
+      <span>
+        <p><b>To</b></p>
+        <select searchable="SearchtoCity" formControlName="city2">
+          <option value="" disabled selected>Choose your City</option>
+          <option *ngFor="let item of cityname" >
+            {{item.city}}
+          </option>
+        </select>
+        <div class="text-center at-3">
+          <button class="btn btn-primary" (click)="searchflight()">search</button>
+        </div>
+      </span>
+    </span>
+    </span>
+   
+  <!-- slider use karu?? -->
+  
+    
+   
+    <div class="col-md-12" *ngFor="let item of filterflightdataaa">
+      <div class="card flex-md-row mb-4 box-shadow h-md-50">
+        
+      <div class="col-md-3 ">
+            <img class="card-img-right flex-auto d-none d-md-block" data-src="holder.js/200x250?theme=thumb" alt="Thumbnail [200x250]" style="width: 200px; height: 250px;" src="https://grocurv.com/media/images/SpiceJet.height-480.png" data-holder-rendered="true">
+      </div>
+       <div class="col-md-2 mx-auto fromclass"> 
+            <div class="card-body d-flex flex-column align-items-start">
+          <strong class="d-inline-block mb-2 text-success fromclass">{{item?.fromm}}</strong>
+          <h3 class="mb-0 fromclass">
+            <a class="text-dark" >{{item?.fromtime}}</a>
+          </h3>
+          <div class="mb-1 text-muted fromclass">Nov 11</div>
+        </div>
+      </div>
+      <div class="col-md-2 fromclass">
+        <div class="mb-1 text-muted fromclassss">{{item?.traveldate}}</div>
+        <div class="mb-1 text-muted fromclass">-------------------------</div>
+      </div>
+
+          
+      <div class="col-md-3">  <div class="card-body d-flex flex-column align-items-start">
+            <strong class="d-inline-block mb-2 text-success fromclass">{{item?.too}}</strong>
+            <h3 class="mb-0 fromclass">
+              <a class="text-dark" >{{item?.totime}}</a>
+            </h3>
+            <div class="mb-1 text-muted fromclass">Nov 11</div>
+           </div>
+          </div>
+          <div class="col-md-2 fromclass"> 
+            <h3 class="mb-0 fromclass">
+              <a class="text-dark" >{{item?.Bookingprice}}</a>
+            </h3>
+            <div class="mb-1 text-muted fromclassss"><button type="button" class="btn btn-secondary btn-sm">view price</button></div>
+           
+            <!-- <div class="mb-1 text-muted vvvv" (click)="viewflightdetails"><a>View Flight Details</a></div> -->
+          
+          </div>
+            
+          </div>
+      </div>
+
+    
+    <div>
+
+    </div>
+   
+
+       
+    
+ 

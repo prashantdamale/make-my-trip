@@ -1,0 +1,16 @@
+<p>reative works!</p>
+<form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+    <div>
+      <label>
+        Name:
+        <input formControlName="name" placeholder="Your name">
+      </label>
+    </div>
+    <div>
+      <label>
+        Email:
+        <input formControlName="email" placeholder="Your email">
+      </label>
+    </div>
+      <button type="submit">Send</button>
+    </form>

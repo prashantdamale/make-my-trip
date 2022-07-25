@@ -1,0 +1,47 @@
+<app-nav></app-nav>
+<p>trivel-info works!</p>
+<mat-stepper class="acx">
+  <mat-step >
+  <ng-template matStepLabel="content">Completed</ng-template>
+   <mat-card class="example-card, cvb" *ngFor="let item of completestatus">
+    <mat-card-subtitle>{{item?.from}}</mat-card-subtitle>
+    <mat-card-subtitle>{{item?.to}}</mat-card-subtitle>
+    <mat-card-title>{{item?.status}}</mat-card-title>
+    <mat-card-content>
+     <p>{{item?.traveldate}}</p>
+    </mat-card-content>
+  </mat-card>
+<button mat-button matStepperNext>Next</button>
+</mat-step>
+
+<mat-step>
+  <ng-template matStepLabel="content">cancelled</ng-template>
+  <mat-card class="example-card, cvb" *ngFor="let item of cancelled">
+    <mat-card-subtitle>{{item?.from}}</mat-card-subtitle>
+    <mat-card-subtitle>{{item?.to}}</mat-card-subtitle>
+    <mat-card-title>{{item?.status}}</mat-card-title>
+    <mat-card-content>
+     <p>{{item?.traveldate}}</p>
+    </mat-card-content>
+  </mat-card>
+  <button mat-button matStepperNext>Next</button>
+</mat-step>
+
+<mat-step>
+  <ng-template matStepLabel="content">upcoming</ng-template>
+  <mat-card class="example-card, cvb" *ngFor="let item of upcoming">
+    <mat-card-subtitle>{{item?.from}}</mat-card-subtitle>
+    <mat-card-subtitle>{{item?.to}}</mat-card-subtitle>
+    <mat-card-title>{{item?.status}}</mat-card-title>
+    <mat-card-content>
+     <p>{{item?.traveldate}}</p>
+    </mat-card-content>
+  </mat-card>
+</mat-step>
+
+</mat-stepper>
+
+<hr><hr>
+
+
+

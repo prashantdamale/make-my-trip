@@ -1,0 +1,23 @@
+
+<h1>
+  <h1 *ngIf="loginform.valid && loginform.touched">{{msg}}</h1>
+  
+  
+  <form [formGroup]="loginform" (ngSubmit)="submitform()">
+  <div>
+  <label>Name: </label>
+  <input id ="text" type="text" placeholder="Enter Name" formControlName="username1" required >
+  </div>
+  <div>
+  <label>Email Id: </label>
+  <input id ="email" type="email" placeholder="Enter Email" formControlName="emailid" required>
+  </div>
+  <div>
+  <label>Password: </label>
+  <input id="password" type="password" placeholder="Enter Password" formControlName="password1" required>
+</div>
+<div>
+<button type="submit"> Submit</button>
+</div>
+</form>
+</h1>

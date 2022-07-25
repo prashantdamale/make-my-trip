@@ -1,0 +1,24 @@
+{
+    "userdetails":[{
+"name" : "prashant",
+"email" : "prashant@gmail.com",
+"password" : "prashant"
+    },
+    {
+        "id":22,
+        "name":"amit",
+       "country":"india",
+       "mobile":846512,
+       "password":12345,
+       "email" : "amit@gmail.com"
+},
+{
+    "id":33,
+    "name":"ganesh",
+   "country":"india",
+   "mobile":846512,
+   "password":123456,
+   "email" : "ganesh@gmail.com"
+}
+]
+}

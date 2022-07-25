@@ -1,0 +1,34 @@
+{
+    "data":[
+        {
+     "id":451885,
+     "name":"prashant",
+    "country":"india",
+    "mobile":846512
+    },
+    {
+        "id":45100,
+        "name":"amit",
+       "country":"india",
+       "mobile":4556464
+    },
+    {
+        "id":8000058,
+        "name":"ram",
+       "country":"india",
+       "mobile":566000004
+    }
+],
+"links":[{
+    "rel":"first",
+    "href":"/v1/goe/cities?offset=0&lomit=5"
+},
+{
+    "rel":"sec",
+    "href":"/v1/goe/cities?offset=0&lomit=5"
+},
+{
+    "rel":"next",
+    "href":"/v1/goe/cities?offset=0&lomit=5"
+}]
+}
